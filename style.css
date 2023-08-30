@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box  ;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.box{
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-inline:20px ;
+}
+.left{
+    flex-direction: row-reverse;
+}
+#hum{
+    width: 30px;
+    display: none;
+}
+.btn{
+    padding: 5px 20px;
+    background-color: #0E21A0;
+    color: white;
+    border: 1px solid transparent ;
+    box-sizing: border-box;
+    transition: 0.3s background-color ease-out;
+}
+.btn:hover{
+    background-color: transparent;
+    color:#0E21A0;
+    border: 1px solid #0E21A0;
+}
+.btn2{
+    padding: 5px 20px;
+    background-color: transparent;
+    color: 121212;
+    border: 1px solid #0E21A0 ;
+    box-sizing: border-box;
+    transition: 0.3s background-color ease-out;
+}
+.btn2:hover{
+    background-color: #0E21A0;
+    color:white;
+    border: 1px solid #0E21A0;
+}
+.devider{
+    width: 100%;
+    background-color: gray;
+    color: red;
+    /* height: 20px; */
+}
+hr{
+    border: 1px solid rgb(244, 244, 244);
+}
+.banner{
+    width: 100%;
+    text-align: center;
+    background-color:darkorchid;
+    padding-block: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+nav{
+    margin-block: 10px;
+    padding-inline: 20px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: #0E21A0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+}
+a:hover{
+    color: darkcyan;
+}
+.section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-block: 20px;
+}
+#logo{
+    margin-right: auto;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+}
+.section img{
+    width: 55%;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #121212;
+}
+#ambition{
+    color: rgb(255, 140, 0);
+}
+#learing{
+    color: green;
+}
+#not{
+    color: red;
+    text-decoration: line-through;
+}
+.desc .btn{
+    width: fit-content;
+}
+.png{
+    width: 50px;
+}
+
+
+/* features Section */
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+}
+.features img{
+    width: 90px;
+}
+.features-card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.course-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 15px;
+}
+.course-card img{
+    width: 50%;
+}
+.course-card .desc ul{
+    flex-direction: column;
+    align-items: flex-start;
+} 
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+input{
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+textarea{
+    font-size: 1.2rem;
+    padding: 10px;
+    height: 7rem;
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+    resize: none;
+}
+input[type=submit]{
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: darkgreen;
+    color: white;
+}
+.contact-section{
+    background-color: #0E21A0;
+    padding-block: 10px;
+}
+.contact-section .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-section img{
+    width: 20%;
+}
+
+
+@media (max-width:1024px) {
+    .nav{
+        display: none;
+    }
+    #hum{
+        display: block;
+    }
+}
+@media (max-width:750px) {
+    .section{
+        flex-wrap: wrap;
+    }
+    .section img{
+    width: 90%;
+    margin-inline: auto;
+}
+}
+@media (max-width:560px) {
+    html{
+        font-size: 14px;
+    }
+    #hum{
+        width: 25px;
+    }
+    .course-card{
+        flex-direction: column;
+        gap: 40px;   
+        align-items: center;
+    }
+    .course-card img{
+        width: 90%;
+    }
+    .features-card{
+        width: 100%;
+    } 
+    #help{
+        display: none;
+    }  
+    form{
+        width: 90%;
+    }
+    .section img{
+        width: 100%;
+    } 
+}
