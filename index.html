@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icons8-tech-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,24 +12,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>New Application</title>
+    <title>TechStack.com</title>
   </head>
 
   <body>
-    <div class="banner">📢📢 Hurray! now get flat 50% off</div>
+    <div data-aos="zoom-in" class="banner">📢📢 Hurray! now get flat 50% off</div>
 
-    <nav class="box">
+    <nav  class="box">
       <ul>
-        <a id="logo" href="#">techStack.com</a>
-        <a class="nav" href="#">Home</a>
-        <a class="nav" href="#">About</a>
-        <a class="nav" href="#">Contact</a>
-        <a class="nav" href="#">Course</a>
-        <a class="nav btn2" href="#">Login</a>
-        <img id="hum" src="icons8-menu-50.png" alt="">
+        <a data-aos="slide-right" id="logo" href="#">techStack.com</a>
+        <a data-aos="slide-left" class="nav" href="#">Home</a>
+        <a data-aos="slide-left" class="nav" href="#">About</a>
+        <a data-aos="slide-left" class="nav" href="#contact">Contact</a>
+        <a data-aos="slide-left" class="nav" href="#course">Course</a>
+        <a data-aos="slide-left" class="nav btn2" href="#">Login</a>
+        <img data-aos="slide-left" id="hum" src="icons8-menu-50.png" alt="">
       </ul>
     </nav>
-    <div class="section box">
+
+    <div data-aos="zoom-out" data-aos-delay="300" class="section box">
       <img src="5836.jpg" alt="" />
       <div class="desc">
         <h1>
@@ -48,9 +51,10 @@
         <hr>
     </div>
 
-    <h2 style="text-align: center;margin-block: 40px;">Features</h2>
+    <h2 data-aos="fade-up" style="text-align: center;margin-block: 40px;">Features</h2>
     <div class="features box">
-      <div class="features-card">
+
+      <div data-aos="fade-left" data-aos-delay="300" class="features-card">
         <img src="certificate.png" alt="" />
         <div>
           <h2>Certified Educator</h2>
@@ -59,9 +63,9 @@
           </p>
         </div>
         <a class="btn2" href="#">Read..</a>
-
       </div>
-      <div class="features-card">
+
+      <div data-aos="fade-right" data-aos-delay="300" class="features-card">
         <img src="education.png" alt="" />
         <div>
             <h2>Graduate with Skill</h2>
@@ -71,7 +75,8 @@
         </div>
         <a class="btn2" href="#">Read..</a>
       </div>
-      <div class="features-card">
+
+      <div data-aos="fade-left" data-aos-delay="300" class="features-card">
         <img src="help-center.png" alt="" />
         <div>
 
@@ -82,7 +87,8 @@
         </div>
         <a class="btn2" href="#">Read..</a>
       </div>
-      <div class="features-card">
+
+      <div data-aos="fade-right" data-aos-delay="300" class="features-card">
         <img src="love.png" alt="" />
         <div>
 
@@ -93,7 +99,8 @@
         </div>
         <a class="btn2" href="#">Read..</a>
       </div>
-      <div class="features-card">
+
+      <div data-aos="fade-left" data-aos-delay="300" class="features-card">
         <img src="presentation.png" alt="" />
         <div>
 
@@ -104,7 +111,8 @@
         </div>
         <a class="btn2" href="#">Read..</a>
       </div>
-      <div class="features-card">
+
+      <div data-aos="fade-right" data-aos-delay="300" class="features-card">
         <img src="puzzle.png" alt="" />
         <div>
 
@@ -115,20 +123,21 @@
         </div>
         <a class="btn2" href="#">Read..</a>
       </div>
+
     </div>
 
-    <div class="box">
+    <div id="course" class="box">
         <br>
         <br>
         <hr>
     </div>
 
-    <h2 style="text-align: center;margin-block: 40px;">Explore Courses</h2>
+    <h2 id="course" data-aos="fade-up" style="text-align: center;margin-block: 40px;">Explore Courses</h2>
 
     <div class="course box">
-        <div class="course-card">
-            <img src="4799410.jpg" alt="">
-            <div class="desc">
+        <div  class="course-card">
+            <img data-aos="fade-right" src="4799410.jpg" alt="">
+            <div data-aos="zoom-in" class="desc">
                 <h1>MERN stack</h1>
                 <h2>Most Demanded Stack</h2>
                 <p>It is used by developers worldwide. The main purpose of using MERN stack is to develop apps using JavaScript only. </p>
@@ -138,9 +147,9 @@
     </div>
 
     <div class="course box">
-        <div class="course-card left">
-            <img src="4136918.jpg" alt="">
-            <div class="desc">
+        <div  class="course-card left">
+            <img data-aos="fade-left" src="4136918.jpg" alt="">
+            <div data-aos="zoom-in" class="desc">
                 <h1>MEAN stack</h1>
                 <h2>From Industry Expert</h2>
                 <p>MEAN is a source-available JavaScript software stack for building dynamic web sites and web applications. A variation known as MERN replaces Angular with React.js front-end</p>
@@ -150,9 +159,9 @@
     </div>
 
     <div class="course box">
-        <div class="course-card">
-            <img src="4491464.jpg" alt="">
-            <div class="desc">
+        <div style="overflow: hidden;" class="course-card">
+            <img data-aos="flip-right" src="4491464.jpg" alt="">
+            <div data-aos="fade-left" class="desc">
                 <h1>UI / UX Design</h1>
                 <h2>On Market Specialist</h2>
                 <p>UX design is all about identifying and solving user problems; UI design is all about creating intuitive, aesthetically-pleasing, interactive interfaces.</p>
@@ -166,12 +175,12 @@
     </div>
 
     
-    <div class="contact-section">
-        <h2 style="text-align: center;margin-block: 40px;color: white;">Contact Us</h2>
-        <div class="box">
+    <div  id="contact" class="contact-section">
+        <h2 data-aos="fade-up" style="text-align: center;margin-block: 40px;color: white;">Contact Us</h2>
+        <div style="overflow: hidden;" class="box">
 
-            <img id="help" src="contact3.png" alt="">
-            <form action="#">
+            <img data-aos="zoom-in" id="help" src="contact3.png" alt="">
+            <form data-aos="zoom-out" action="#">
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
                 <textarea placeholder="Write Your Query/Inquiry"></textarea>
@@ -180,5 +189,13 @@
         </div>
     </div>
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:150,
+        duration:1000
+      });
+    </script>
   </body>
 </html>
